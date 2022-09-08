@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600|Open+Sans" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link rel="icon" href="img/logo-fuerzadelpueblo.png">
+    <link rel="stylesheet" href="stile.css">
+    <title>La fuerza del pueblo</title>
+</head>
+<body>
+    <form action="https://formsubmit.co/nicolnicole193@gmail.com" class="form-register" method="post" enctype="multipart/form-data" autocomplete="off">
+        <h1 class="form-title">Formulario de Afiliación</h1>
+        <div class="container-flex">
+            <label for="form-input" class="form-label">Nombre</label>
+            <input type="text" class="form-input" id="form-input" name="nombre" placeholder="EJ: pedro" required>
+        </div>
+        <div class="container-flex">
+            <label for="form-input" class="form-label">Apellido</label>
+            <input type="text" class="form-input" id="form-input" name="apellido" placeholder="EJ: de los santos" required>
+        </div>
+        <div class="container-flex">
+            <label for="form-input" class="form-label">Sexo</label>
+            <br>
+            <label for="sexo1" class="form-g">M</label>
+            <input type="radio" id="sexo1" class="form-s" name="sexo" value="m">
+            <label for="sexo2" class="form-g">F</label>
+            <input type="radio" id="sexo2" class="form-g" name="sexo" value="f" >
+        </div>
+        <div class="container-flex">
+            <label for="form-input" class="form-label">Correo Electrónico</label>
+            <input type="mail" class="form-input" id="form-input" name="correo" placeholder="EJ: ...@gmail.com" required>
+        </div>
+        <div class="container-flex">
+            <label for="form-input" class="form-label">Teléfono</label>
+            <input type="text" class="form-input" id="form-input" name="Teléfono" placeholder="EJ: 00000000000" required>
+        </div>
+        <div class="container-flex">
+            <label for="form-input" class="form-label">Dirección</label>
+            <input type="text" class="form-input" id="form-input" name="Dirección" placeholder="EJ: c/ #" required>
+        </div>
+        <input type="submit" class="form-submit" name="guardar">
+        <div class="cont">
+            <article>
+             <input type="checkbox" name="terminos y condiciones" id="t" value="acepto" required>
+             <label for="t"> He leido y acepto los  </label>
+             <a href="#" id="tandc" class="tandc">Terminos y Condiciones </a>
+            </article>
+           <div class="overlay" id="overlay">
+               <div class="popup" id="popup">
+                 <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+                 <h3>Terminos y Condiciones</h3>
+                 <p>Acepta recibir información y apoyar al candidato <br> de las próximas elecciones Leonel Fernandez 2024.</p>
+               </div>
+           </div>
+           <script src="terminos.js"></script>
+       </div>
+    </form>
+</body>
+</html>
